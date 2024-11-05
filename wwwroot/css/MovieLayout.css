@@ -1,0 +1,17 @@
+﻿header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+body {
+    background-image: url('../lib/HInhNen/Main2.PNG');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen với độ trong suốt 50% */
+    /* Đảm bảo lớp phủ không che nội dung */
+}
+#nav-tog a{
+    color:white
+}
+    #nav-tog a:hover {
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
