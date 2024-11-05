@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Producer>
+@{
+    ViewData["Title"] = "List Producer";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>@Html.DisplayNameFor(Model => Model.ProfilePictureURL)</th>
+                    <th>@Html.DisplayNameFor(Model=>Model.FullName)</th>
+                    <th>@Html.DisplayNameFor(Model => Model.Bio)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var producer in Model)
+                {
+                  <tr class="text-center">
+                    <td class="align-middle">
+                        <img class="rounded-circle" src="@producer.ProfilePictureURL" alt="@producer.FullName" style="max-width:100px; max-height:100px"/>
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(producelModel=>producer.FullName);
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(producerModel=>producer.Bio);
+                    </td>
+                        <td class="align-middle">
+                            <a class="btn btn-outline-primary"> <i class="bi bi-pencil-square"></i> Edit</a> |
+                            <a class="btn btn-outline-info"> <i class="bi bi-eye"></i> Detail</a> |
+                            <a class="btn btn-danger text-white"><i class="bi bi-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+               
+                   
+            </tbody>
+   
+</table>
+
+    </div>
+
+</div>
