@@ -4,10 +4,10 @@
 @* define model *@
 @* view data *@
 @* write code *@
-
 @model IEnumerable<Movie>
 @{
     ViewData["Title"] = "List of Movies";
+    Layout = "~/Views/Shared/_LayoutMovies.cshtml";
 }
 
 <div class="row">
@@ -17,7 +17,7 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-12">
-                        <div class="card-header text-white bg-info">
+                        <div class="card-header text-white bg-secondary">
                             <p class="card-text">
                                 <h5 class="card-title">
                                     @item.Name
@@ -57,7 +57,7 @@
                         <div class="card-footer ">
                             <p class="card-text">
                                 <a class="btn btn-outline-primary float-right"><i class="bi bi-eye-fill"></i> Show Details</a>
-                                <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Add to Cart (Price @item.Price.ToString("c"))</a>
+                                <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Add to Cart ( Giá: @Math.Round(item.Price, 0).ToString("C0", new System.Globalization.CultureInfo("vi-VN")))</a>
                             </p>
                         </div>
                     </div>
