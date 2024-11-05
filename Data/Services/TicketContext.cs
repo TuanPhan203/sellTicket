@@ -1,11 +1,11 @@
 ﻿using eTickets.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace eTickets.Data
+namespace eTickets.Data.Services
 {
-    public class TicketContext: DbContext
+    public class TicketContext : DbContext
     {
-        public TicketContext(DbContextOptions options): base(options)
+        public TicketContext(DbContextOptions options) : base(options)
         {
 
         }
