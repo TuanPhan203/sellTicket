@@ -32,22 +32,22 @@
                     <div class="col-md-6">
                         <div class="card-body">
                             <p class="card-text">@item.Description</p>
-                            <p class="card-text"><b>Cinema: </b>@item.Cinema.Name</p>
-                            <p class="card-text"><b>Category: </b>@item.MovieCategory</p>
-                            <p class="card-text"><b>Start Date: </b>@item.StartDate.ToString("dd MMM")</p>
-                            <p class="card-text"><b>End Date: </b>@item.EndDate.ToString("dd MMM")</p>
+                            <p class="card-text"><b>Rạp: </b>@item.Cinema.Name</p>
+                            <p class="card-text"><b>Danh mục: </b>@item.MovieCategory</p>
+                            <p class="card-text"><b>Bắt đầu: </b>@item.StartDate.ToString("dd MMM")</p>
+                            <p class="card-text"><b>Kết thúc: </b>@item.EndDate.ToString("dd MMM")</p>
                             <p class="card-text ">
-                                <b>Status: </b>
+                                <b>Trạng thái: </b>
                                 @if (DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
                                 {
-                                    <span class="badge bg-success text-white">AVAILABLE</span>
+                                    <span class="badge bg-success text-white">Đang chiếu</span>
                                 }
                                 else if (DateTime.Now > item.EndDate)
                                 {
-                                    <span class="badge bg-danger text-white">EXPIRED</span>
+                                    <span class="badge bg-danger text-white">Hết hạn</span>
                                 } else
                                 {
-                                <span class="badge bg-primary text-white">UPCOMING</span>
+                                <span class="badge bg-primary text-white">Sắp chiếu</span>
                                 }
                             </p>
 
@@ -56,8 +56,8 @@
                     <div class="col-md-12">
                         <div class="card-footer ">
                             <p class="card-text">
-                                <a class="btn btn-outline-primary float-right"><i class="bi bi-eye-fill"></i> Show Details</a>
-                                <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Add to Cart ( Giá: @Math.Round(item.Price, 0).ToString("C0", new System.Globalization.CultureInfo("vi-VN")))</a>
+                                <a class="btn btn-outline-primary float-right"><i class="bi bi-eye-fill"></i> Chi tiết</a>
+                                <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Thêm vào giỏ ( Giá: @Math.Round(item.Price, 0).ToString("C0", new System.Globalization.CultureInfo("vi-VN")))</a>
                             </p>
                         </div>
                     </div>
