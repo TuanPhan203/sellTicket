@@ -1,4 +1,4 @@
-﻿namespace eTickets.Data.Services
+﻿namespace eTickets.Data
 {
     public class TicketDbInitual
     {
