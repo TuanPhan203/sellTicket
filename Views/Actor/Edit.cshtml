@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model eTickets.Models.Actor
+@{
+    ViewData["Title"] = "Edit Actor";
+}
+<div class="row text">
+    <div class="col-md-8 offset-md-2">
+        <p>
+            <h1>Edit Actor</h1>
+        </p>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+            <form method="post" asp-action="Edit">
+                
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <img id="PictureUrlPreview" class="rounded-circle" style="max-width:150px"></img>
+                    <div class="form-group">
+                        <label asp-for="ProfilePictureUrl" class="control-label"></label>
+                        <input asp-for="ProfilePictureUrl" class="form-control"></input>
+                        <span asp-validation-for="ProfilePictureUrl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FullName" class="control-label"></label>
+                        <input asp-for="FullName" class="form-control"></input>
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bio" class="control-label"> </label>
+                        <input asp-for="Bio" class="form-control"></input>
+                        <span asp-validation-for="Bio" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <a asp-action="Index" class="btn btn-outline-primary">Show actor</a>
+                        <input type="submit" class="btn btn-outline-info float-right" value="Edit"></input>
+                    </div>
+                   
+            </form>
+            </div>
+            
+        </div>
+    </div>
+</div>

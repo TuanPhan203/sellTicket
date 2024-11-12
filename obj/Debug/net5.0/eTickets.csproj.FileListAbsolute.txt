@@ -243,3 +243,7 @@ E:\projectCV\eTickets\obj\Debug\net5.0\refint\eTickets.dll
 E:\projectCV\eTickets\obj\Debug\net5.0\eTickets.pdb
 E:\projectCV\eTickets\obj\Debug\net5.0\eTickets.genruntimeconfig.cache
 E:\projectCV\eTickets\obj\Debug\net5.0\ref\eTickets.dll
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Actor\Create.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Actor\Delete.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Actor\Detail.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Actor\Edit.cshtml.g.cs
