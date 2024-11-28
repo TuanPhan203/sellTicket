@@ -21,23 +21,23 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Movie" asp-action="Index"><i class="bi bi-film"></i> Movies</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Movie" asp-action="Index"><i class="bi bi-film"></i> Danh sách vé</a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-gear"></i> Management
+                                <i class="bi bi-gear"></i> Quản lý
                             </a>
 
                             <div id="nav-tog" class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" asp-controller="Cinema" asp-action="Index"><i class="bi bi-camera-reels"></i> Cinemas</a>
-                                <a class="dropdown-item" asp-controller="Producer" asp-action="Index"><i class="bi bi-headset"></i> Producers</a>
-                                <a class="dropdown-item" asp-controller="Actor" asp-action="Index"><i class="bi bi-person-square"></i> Actors</a>
+                                <a class="dropdown-item" asp-controller="Cinema" asp-action="Index"><i class="bi bi-camera-reels"></i> Rạp</a>
+                                <a class="dropdown-item" asp-controller="Producer" asp-action="Index"><i class="bi bi-headset"></i> Nhà sản xuất</a>
+                                <a class="dropdown-item" asp-controller="Actor" asp-action="Index"><i class="bi bi-person-square"></i> Diễn viên</a>
                             </div>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0" asp-controller="Home" asp-action="Filter" style="padding-right: 25px;">
-                        <input name="searchString" type="text" class="form-control" placeholder="Search for a movie..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <form class="form-inline my-2 my-lg-0" asp-controller="Movie" asp-action="Filter" style="padding-right: 25px;">
+                        <input name="searchString" type="text" class="form-control" placeholder="Tìm kiếm theo tên phim..." aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit"><i class="bi bi-search text-white"></i></button>
                     </form>
                 </div>
@@ -52,7 +52,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - eTickets - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - Weekendxemphim - <a asp-area="" asp-controller="Home" asp-action="Privacy">Chính sách</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

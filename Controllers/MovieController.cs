@@ -42,9 +42,9 @@ namespace eTickets.Controllers
             return View("Index", allMovies);
         }
 
-        //GET: Movies/Details/1
+        //GET: Movies/Detail/1
         [AllowAnonymous]
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Detail(int id)
         {
             var movieDetail = await _service.GetMovieByIdAsync(id);
             return View(movieDetail);

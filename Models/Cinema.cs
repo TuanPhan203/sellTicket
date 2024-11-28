@@ -13,10 +13,10 @@ namespace eTickets.Models
 
         public string Logo { get; set; }
 
-        [Display(Name="Name")]
+        [Display(Name="Tên rạp")]
         public string Name { get; set; }
 
-        [Display(Name="Descripton")]
+        [Display(Name="Mô tả")]
         public string Description { get; set; }
         //relasionship
         public List<Movie> Movies { get; set; }

@@ -252,3 +252,9 @@ E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Producer\Detail.cshtml.g.cs
 E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Producer\Edit.cshtml.g.cs
 E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Movie\Create.cshtml.g.cs
 E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Shared\_CreateItem.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Movie\Detail.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Movie\Edit.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Cinema\Create.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Cinema\Delete.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Cinema\Detail.cshtml.g.cs
+E:\projectCV\eTickets\obj\Debug\net5.0\Razor\Views\Cinema\Edit.cshtml.g.cs

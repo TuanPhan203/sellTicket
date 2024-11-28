@@ -21,13 +21,13 @@
                             <p class="card-text">
                                 <h5 class="card-title">
                                     @item.Name
-                                    <a class="text-white float-right"><i class="bi bi-pencil-square"></i></a>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="text-white float-right"><i class="bi bi-pencil-square"></i></a>
                                 </h5>
                             </p>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="@item.ImageURL" style="width:110%; height:100%" alt="@item.Name">
+                        <img src="@item.ImageURL" style="width:110%; max-height:300px" alt="@item.Name">
                     </div>
                     <div class="col-md-6">
                         <div class="card-body">
@@ -56,7 +56,7 @@
                     <div class="col-md-12">
                         <div class="card-footer ">
                             <p class="card-text">
-                                <a class="btn btn-outline-primary float-right"><i class="bi bi-eye-fill"></i> Chi tiết</a>
+                                <a asp-route-id="@item.Id" asp-action="Detail" class="btn btn-outline-primary float-right"><i class="bi bi-eye-fill"></i> Chi tiết</a>
                                 <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Thêm vào giỏ ( Giá: @Math.Round(item.Price, 0).ToString("C0", new System.Globalization.CultureInfo("vi-VN")))</a>
                             </p>
                         </div>

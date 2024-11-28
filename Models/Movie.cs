@@ -11,12 +11,13 @@ namespace eTickets.Models
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name = "Name")]
+        [Display(Name = "Tên phim")]
         public string Name { get; set; }
-        [Display(Name="Description")]
+        [Display(Name="Mô tả")]
         public string Description { get; set; }
+        [Display(Name = "Giá")]
         public double Price { get; set; }
-        [Display(Name="Picture")]
+        [Display(Name="Hình ảnh")]
         public string ImageURL { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

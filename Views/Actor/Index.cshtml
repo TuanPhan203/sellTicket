@@ -8,7 +8,7 @@
 @{
     ViewData["Title"] = "danh sach tac gia";
 }
-<a asp-action="Create" class="btn btn-outline-success float-right">Add actor</a>s
+<a asp-action="Create" class="btn btn-outline-success float-right">Thêm diễn viên</a>
 <div class="row"> 
    <div class="col-md-8 offset-md-2">
        <table class="table">
@@ -17,7 +17,7 @@
                       <th>@Html.DisplayNameFor(model=>model.ProfilePictureUrl)</th>
                       <th>@Html.DisplayNameFor(model=>model.FullName)</th>
                       <th>@Html.DisplayNameFor(model=>model.Bio)</th>
-                      <th>Actions</th>
+                      <th>Chức năng</th>
                   </tr>
               </thead>
 
@@ -35,9 +35,9 @@
                             @Html.DisplayFor(actorModel=>actor.Bio)
                         </td>
                         <td class="align-middle">
-                            <a asp-action="Edit" asp-route-id="@actor.Id" class="btn btn-outline-primary"> <i class="bi bi-pencil-square"></i> Edit</a> |
-                            <a asp-action="Detail" asp-route-id="@actor.Id" class="btn btn-outline-info"> <i class="bi bi-eye"></i> Detail</a> |
-                            <a asp-action="Delete" asp-route-id="@actor.Id" class="btn btn-danger text-white"><i class="bi bi-trash"></i> Delete</a>
+                            <a asp-action="Edit" asp-route-id="@actor.Id" class="btn btn-outline-primary"> <i class="bi bi-pencil-square"></i> Sửa</a> |
+                            <a asp-action="Detail" asp-route-id="@actor.Id" class="btn btn-outline-info"> <i class="bi bi-eye"></i> Chi tiết</a> |
+                            <a asp-action="Delete" asp-route-id="@actor.Id" class="btn btn-danger text-white"><i class="bi bi-trash"></i> Xoá</a>
                         </td> 
                     </tr>
                 }
