@@ -57,7 +57,7 @@
                         <div class="card-footer ">
                             <p class="card-text">
                                 <a asp-route-id="@item.Id" asp-action="Detail" class="btn btn-outline-primary float-right"><i class="bi bi-eye-fill"></i> Chi tiết</a>
-                                <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Thêm vào giỏ ( Giá: @Math.Round(item.Price, 0).ToString("C0", new System.Globalization.CultureInfo("vi-VN")))</a>
+                                <a class="btn btn-success text-white" asp-controller="Order" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id"><i class="bi bi-cart-plus"></i> Add to Cart (Price @item.Price.ToString("c"))</a>
                             </p>
                         </div>
                     </div>
