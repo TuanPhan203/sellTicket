@@ -25,13 +25,13 @@
                     <div class="card-body">
                         <p class="card-text">@Model.Description</p>
                         <p class="card-text">
-                            <b>Cinema: </b>
+                            <b>Rạp: </b>
                             <a asp-controller="Cinema" asp-action="Details" asp-route-id="@Model.CinemaId">
                                 @Model.Cinema.Name
                             </a>
                         </p>
                         <p class="card-text">
-                            <b>Producer: </b>
+                            <b>Nhà sản xuất: </b>
                             <a asp-controller="Producer" asp-action="Detail" asp-route-id="@Model.ProducerId">
                                 @Model.Producer.FullName
                             </a>
@@ -40,7 +40,7 @@
                         <p class="card-text"><b>Start Date: </b>@Model.StartDate.ToString("dd MMM yy")</p>
                         <p class="card-text"><b>End Date: </b>@Model.EndDate.ToString("dd MMM yy")</p>
                         <p class="card-text ">
-                            <b>Status: </b>
+                            <b>Trạng thái: </b>
                             @if (DateTime.Now >= Model.StartDate && DateTime.Now <= Model.EndDate)
                             {
                                 <span class="badge bg-success text-white">AVAILABLE</span>
@@ -55,7 +55,7 @@
                             }
                         </p>
                         <p class="card-text">
-                            <b>Actors: </b>
+                            <b>Diễn viên: </b>
                             <hr />
                             <div class="row">
                                 @foreach (var actor in Model.Actors_Movies)

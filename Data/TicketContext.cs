@@ -1,9 +1,10 @@
 ﻿using eTickets.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace eTickets.Data
 {
-    public class TicketContext : DbContext
+    public class TicketContext : IdentityDbContext<ApplicationUser>
     {
         public TicketContext(DbContextOptions options) : base(options)
         {

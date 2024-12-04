@@ -19,7 +19,9 @@ namespace eTickets.Models
         public double Price { get; set; }
         [Display(Name="Hình ảnh")]
         public string ImageURL { get; set; }
+        [Display(Name = "Ngày bắt đầu")]
         public DateTime StartDate { get; set; }
+        [Display(Name = "Dừng chiếu")]
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
 

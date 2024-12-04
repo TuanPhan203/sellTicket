@@ -45,6 +45,7 @@ E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\appsettings.json
 E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\eTickets.dll
 E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\eTickets.runtimeconfig.json
 E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\eTickets.pdb
+E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 E:\projectCV\eTickets\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll

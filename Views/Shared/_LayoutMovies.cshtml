@@ -23,7 +23,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Movie" asp-action="Index"><i class="bi bi-film"></i> Danh sách vé</a>
                         </li>
-
+                        
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                        {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="bi bi-gear"></i> Quản lý
@@ -35,6 +37,7 @@
                                 <a class="dropdown-item" asp-controller="Actor" asp-action="Index"><i class="bi bi-person-square"></i> Diễn viên</a>
                             </div>
                         </li>
+                        }
                     </ul>
                    
                     <form class="form-inline my-2 my-lg-0" asp-controller="Movie" asp-action="Filter" style="padding-right: 25px;">
@@ -44,20 +47,7 @@
                     
                         @await Component.InvokeAsync("ShoppingCartSummary")
 
-                    @*User profile section*@
-                    <div class="dropdown">
-                        <button class="btn btn-outline-warning dropdown-toggle" type="button" id="profile-btn" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <i class="bi bi-person-badge"></i> Hello User
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="profile-btn">
-                            <li>
-                                <a class="dropdown-item" asp-controller="Orders" asp-action="Index">
-                                    <i class="bi bi-list"></i> Orders
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <partial name="_Identity.cshtml" />
 
                 </div>
             </div>

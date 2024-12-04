@@ -1,6 +1,8 @@
 ﻿using eTickets.Data;
 using eTickets.Data.Services;
+using eTickets.Data.Static;
 using eTickets.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Runtime.InteropServices;
@@ -8,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace eTickets.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class ProducerController : Controller
     {
         private readonly IProducerRepository _repo;
@@ -15,6 +18,7 @@ namespace eTickets.Controllers
         {
             _repo = repo;
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var listProducer = await _repo.GetAllAsync();
@@ -50,6 +54,7 @@ namespace eTickets.Controllers
             await _repo.UpdateAsync(id, producer);
             return RedirectToAction("Index");
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Detail(int id) {
              var pro = await _repo.GetByIdAsync(id);
             return View(pro);

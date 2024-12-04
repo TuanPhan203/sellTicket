@@ -95,3 +95,14 @@ E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Cinema\Detail.cshtml.g.cs
 E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Cinema\Edit.cshtml.g.cs
 E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Movie\Detail.cshtml.g.cs
 E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Movie\Edit.cshtml.g.cs
+E:\projectCV\eTickets\bin\Release\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Account\AccessDenied.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Account\RegisterCompleted.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Account\Users.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Order\Index.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Order\OrderCompleted.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Order\ShoppingCart.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
+E:\projectCV\eTickets\obj\Release\net5.0\Razor\Views\Shared\_Identity.cshtml.g.cs
